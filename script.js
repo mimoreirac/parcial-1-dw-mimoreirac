@@ -28,3 +28,8 @@ fetch("https://randomuser.me/api/?results=5")
       cardContainer.appendChild(userCard);
     });
   });
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.add("dark-mode");
+    document.getElementById("mainHeader").classList.add("dark-mode");
+})
