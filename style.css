@@ -1,0 +1,116 @@
+:root {
+    --uchu-gray-1: oklch(95.57% 0.003 286.35);
+    --uchu-gray-2: oklch(92.04% 0.002 197.12);
+    --uchu-blue-4: oklch(62.39% 0.181 258.33);
+    --uchu-blue-5: oklch(54.87% 0.222 260.33);
+    --uchu-yin-9: oklch(25.11% 0.006 258.36);
+    --uchu-purple-6: oklch(46.11% 0.198 298.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--uchu-gray-2);
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--uchu-blue-4);
+    width: 100%;
+    height: 50px;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+}
+
+#darkToggle {
+    background-color: var(--uchu-gray-1);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.intro {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#challengeForm {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#submitButton {
+    margin: 2rem 0;
+    padding: 10px;
+    background-color: var(--uchu-blue-4);
+    color: var(--uchu-gray-1);
+    border: 1px solid var(--uchu-blue-5);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.input-field {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: var(--uchu-gray-1);
+    border: 2px solid var(--uchu-blue-4);
+    border-radius: 10px;
+}
+
+.dark-mode {
+    background-color: var(--uchu-yin-9);
+    color: var(--uchu-gray-1);
+}
+
+header.dark-mode {
+    background-color: var(--uchu-purple-6);
+}
+
+#submitButton.dark-mode {
+    background-color: var(--uchu-purple-6);
+}
+
+.input-field.dark-mode {
+    border: 2px solid var(--uchu-purple-6);
+    background-color: var(--uchu-yin-9);
+    color: var(--uchu-gray-1);
+}
+
+a.dark-mode {
+    color: var(--uchu-gray-2);
+    text-decoration: none;
+}
+
+a.dark-mode:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
